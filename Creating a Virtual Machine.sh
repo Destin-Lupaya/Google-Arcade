@@ -314,7 +314,7 @@ resource "google_compute_instance" "gcelab" {
 
 # Update the OS:
 
-# sudo apt-get update
+ sudo apt-get update
 # Copied!
 # Expected output:
 
@@ -324,7 +324,7 @@ resource "google_compute_instance" "gcelab" {
 #  ...
 # Install NGINX:
 
-# sudo apt-get install -y nginx
+ sudo apt-get install -y nginx
 # Copied!
 # Expected output:
 
@@ -335,7 +335,7 @@ resource "google_compute_instance" "gcelab" {
 #  ...
 # Confirm that NGINX is running:
 
-# ps auwx | grep nginx
+ ps auwx | grep nginx
 # Copied!
 # Expected output:
 
@@ -358,7 +358,7 @@ resource "google_compute_instance" "gcelab" {
 # Note: If you want to try this on your own machine, read the gcloud command line tool guide.
 # In the Cloud Shell, use gcloud to create a new VM instance from the command line:
 
-# gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE
+ gcloud compute instances create gcelab2 --machine-type e2-medium --zone=$ZONE
 # Copied!
 # Expected output:
 
@@ -382,14 +382,14 @@ resource "google_compute_instance" "gcelab" {
 
 # To see all the defaults, run:
 
-# gcloud compute instances create --help
+ gcloud compute instances create --help
 # Copied!
 # Note: You can set the default region and zones that gcloud uses if you are always working within one region/zone and you don't want to append the --zone flag every time.
 # To do this, run these commands:
 
-# gcloud config set compute/zone ...
+ gcloud config set compute/zone ...
 
-# gcloud config set compute/region ...
+ gcloud config set compute/region ...
 
 # To exit help, press CTRL + C.
 
@@ -398,7 +398,7 @@ resource "google_compute_instance" "gcelab" {
 
 # You can also use SSH to connect to your instance via gcloud. Make sure to add your zone, or omit the --zone flag if you've set the option globally:
 
-# gcloud compute ssh gcelab2 --zone=$ZONE
+ gcloud compute ssh gcelab2 --zone=$ZONE
 # Copied!
 # Type Y to continue.
 
@@ -409,7 +409,7 @@ resource "google_compute_instance" "gcelab" {
 #    Enter passphrase (empty for no passphrase)
 # After connecting, disconnect from SSH by exiting from the remote shell:
 
-#  exit
+  exit
 # Copied!
 # Task 4. Test your knowledge
 # Test your knowledge about Google Cloud by taking the quiz. (Please select multiple correct options if necessary.)
