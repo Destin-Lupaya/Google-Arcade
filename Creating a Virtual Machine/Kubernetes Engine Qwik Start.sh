@@ -109,7 +109,7 @@
 # Updated property [compute/region].
 # Set the default compute zone,
 
-# gcloud config set compute/zone assigned_at_lab_start
+ gcloud config set compute/zone assigned_at_lab_start
 # Copied!
 # Expected output:
 
@@ -121,7 +121,7 @@
 # Run the following command:
 
 # Create a cluster
-# gcloud container clusters create --machine-type=e2-medium --zone=assigned_at_lab_start lab-cluster 
+ gcloud container clusters create --machine-type=e2-medium --zone=assigned_at_lab_start lab-cluster 
 # Copied!
 # You can ignore any warnings in the output. It might take several minutes to finish creating the cluster.
 
@@ -143,7 +143,7 @@
 
 # Authenticate with the cluster:
 
-# gcloud container clusters get-credentials lab-cluster 
+ gcloud container clusters get-credentials lab-cluster 
 # Copied!
 # Expected output:
 
@@ -156,7 +156,7 @@
 
 # To create a new Deployment hello-server from the hello-app container image, run the following kubectl create command:
 
-# kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
+ kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
 # Copied!
 # Expected output:
 
@@ -168,7 +168,7 @@
 
 # To create a Kubernetes Service, which is a Kubernetes resource that lets you expose your application to external traffic, run the following kubectl expose command:
 
-# kubectl expose deployment hello-server --type=LoadBalancer --port 8080
+ kubectl expose deployment hello-server --type=LoadBalancer --port 8080
 # Copied!
 # In this command:
 
@@ -179,7 +179,7 @@
 # service/hello-server exposed
 # To inspect the hello-server Service, run kubectl get:
 
-# kubectl get service
+ kubectl get service
 # Copied!
 # Expected output:
 
@@ -189,7 +189,7 @@
 # Note: It might take a minute for an external IP address to be generated. Run the previous command again if the EXTERNAL-IP column status is pending.
 # To view the application from your web browser, open a new tab and enter the following address, replacing [EXTERNAL IP] with the EXTERNAL-IP for hello-server.
 
-# http://[EXTERNAL-IP]:8080
+ http://[EXTERNAL-IP]:8080
 # Copied!
 # Expected output: The browser tab displays the message Hello, world! as well as the version and hostname.
 
@@ -199,7 +199,7 @@
 # Task 5. Deleting the cluster
 # To delete the cluster, run the following command:
 
-# gcloud container clusters delete lab-cluster 
+ gcloud container clusters delete lab-cluster 
 # Copied!
 # When prompted, type Y to confirm.
 
